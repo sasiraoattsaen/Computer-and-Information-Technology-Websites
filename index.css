@@ -240,11 +240,13 @@ section::before{
     }
     #header .logo{
         font-weight: 700;
-        font-size: 25px; 
+        font-size: 15px; 
+        
     }
     #header ul li{
-        margin: 2rem 0;  
+        margin: 0.5rem 0;  
     }
+ 
   
 }
 
@@ -260,18 +262,28 @@ section::before{
         flex-direction: column;
         align-items: flex-start;
     }
+    #header .logo{
+        font-weight: 700;
+        font-size: 20px; 
+    }
     #header ul{
         display:none ;
     }
-    #header .logo{
-        font-weight: 700;
-        font-size: 30px; 
-    }
-    section #text{
-        height: 30%;
-        font-size: 15vw;
-    }
     #header ul li{
         margin: 1rem ;
+    }  
+    section #text span{  
+        font-weight: 700;
+        font-size: 20px;
     }
+    section #text{
+    height: 30%;
+    position: absolute;
+    font-size: 9vw;
+    }
+    #btn{
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+
 }
