@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    /*border: 1px solid red; */
+    min-height: 100vh;
+
+}
+.background
+{
+    background: url(img/forest8.png);
+}
+#header
+{
+    
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+}
+#header .logo
+{
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a
+{   
+    text-decoration: none;
+    padding :6px 15px ;
+    color: #5cabca;
+    border-radius: 50px;
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #5cabca;
+    color: #fff;
+   
+}
+
+
+section
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   pointer-events:none;
+}
+section #text
+{
+    height: 30%;
+    position: absolute;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+
+    background:  -webkit-linear-gradient(
+        360deg,#f11c1c,#ff6790);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent ;
+
+}
+section #text span
+{
+    font-size: 0.40ex;
+    letter-spacing: px;
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #fff;
+    color: #5cabca;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+       
+}
+#btn:hover,
+#btn:active
+{
+    background:#5cabca;
+    color: #F9F1F0;
+    box-shadow: 0 0 20px #5cabca;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    left: 0;  
+    bottom: 0px;
+    width: 100%;    
+    height: 150px;
+    background: linear-gradient(to top, #f5d8dc,transparent);
+    z-index: 10000;  
+}
+
+
+
+.dropbtn {
+    color: #5cabca;
+    text-decoration: none;
+    padding :6px 15px ;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+
+}
+
+.dropdown-content {
+   
+  display: none;
+  position: absolute;
+  min-width: 251px;
+  z-index: 1;
+ 
+}
+
+.dropdown-content a { 
+  font-size: 14px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  display: block;
+
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {    background: #5cabca; color: #fff;}
+
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+
+.menu-active{
+    display: block !important;
+
+}
+@media only screen and (min-width: 920px){
+    .container{
+        display: none;
+    }
+    section #text{
+        transform: translateY(-50%);
+    }
+    #header ul li a{
+    text-decoration: none;
+
+    border-radius: none;
+    }
+}
+
+@media only screen and (max-width: 450px)
+{   
+    #header
+    {
+        padding: 30px 30px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header ul{
+        display:none ;
+    }
+    #header .logo{
+        font-weight: 700;
+        font-size: 15px; 
+        
+    }
+    #header ul li{
+        margin: 0.5rem 0;  
+    }
+ 
+  
+}
+
+
+@media only screen and (max-width: 919px)
+{   
+    .menu.responsive .dropdown {float: none;}
+
+    #header
+    {
+        padding: 30px 30px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #header ul{
+        display:none ;
+    }
+    #header .logo{
+        font-weight: 700;
+        font-size: 30px; 
+    }
+    section #text{
+        height: 30%;
+        font-size: 15vw;
+    }
+    #header ul li{
+        margin: 1rem ;
+    }
+
+}
