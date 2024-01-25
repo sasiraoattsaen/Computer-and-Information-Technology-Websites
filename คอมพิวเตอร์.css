@@ -469,15 +469,20 @@ body {
     #header ul li{
         margin: 1rem ;
     }
+
+    .home{
+        padding: 20px ;
+    }
     .box-content p{
         margin-bottom: 1px;
+        
     }
     .box-content h1{
-        font-size: 20px;
-        margin-top: 1rem;
+        font-size: 13px;
+       
     }
     .box-content p{
-        font-size: 15px;
+        font-size: 10px;
         margin-bottom: 1rem;
     }
     .resume_wrap{
