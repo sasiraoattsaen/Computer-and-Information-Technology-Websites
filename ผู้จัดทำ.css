@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    
+    min-height: 100vh;
+
+}
+.background
+{
+    background: url(img/forest8.png );
+}
+#header
+{
+    
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+}
+#header .logo
+{
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+
+}
+#header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a
+{
+    text-decoration: none;
+    padding :6px 15px ;
+    color: #5cabca;
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #5cabca;
+    color: #fff;
+}
+
+section
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   pointer-events:none;
+}
+section #text
+{
+    height: 31%;
+    position: absolute;
+    font-size: 9vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+
+    background:  -webkit-linear-gradient(
+        360deg,#f11c1c,#ff6790);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent ;
+
+}
+section #text span
+{
+    
+    letter-spacing: px;
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+
+
+
+.dropbtn {
+    color: #5cabca;
+    text-decoration: none;
+    padding :6px 15px ;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+   
+  display: none;
+  position: absolute;
+  min-width: 251px;
+  z-index: 1;
+}
+
+.dropdown-content a { 
+  font-size: 14px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {    background: #5cabca; color: #fff;}
+
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+
+  
+
+section::before{
+    content: '';
+    position: absolute;
+    left: 0;  
+    bottom: 0px;
+    width: 100%;    
+    height: 150px;
+    background: linear-gradient(to top, #F9CCD3,transparent);
+    z-index: 10000;
+}
+.home{
+    background: linear-gradient(to bottom, #F9CCD3,transparent);
+    
+    
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 700px; 
+    color: #f79489;
+
+
+}
+.home-content h3{
+    font-size: 30px; 
+    font-weight: 700;  
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    
+}
+.home-content p{
+    font-size: 19px; 
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2.9px solid #DE847B;
+    border-radius: 30px;
+    color: #DE847B;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+    background:#DE847B;
+    color: #F9F1F0;
+    box-shadow: 0 0 20px #DE847B;
+
+}
+.img-small{
+    position: relative;
+    width: 330px;
+    height: 330px;
+    animation: floatimamge 4s ease-in-out infinite;
+}
+.img{
+    position: relative;
+    width: 525px;
+    height: 525px;
+    animation: floatimamge 4s ease-in-out infinite;
+}
+
+@keyframes floatimamge{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+.menu-active{
+    display: block !important;
+
+}
+@media only screen and (min-width: 920px){
+    .container{
+        display: none;
+    }
+    section #text{
+        transform: translateY(-50%);   
+    }
+    .img-small{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px)
+{   
+    #header
+    {
+        padding: 30px 30px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #header ul{
+        display:none ;
+    }
+    #header .logo{
+        font-weight: 700;
+        font-size: 25px; 
+    }
+    #header ul li{
+        margin: 2rem 0;  
+    }
+  
+
+
+    .home-content{
+        max-width: 700px; 
+        color: #f79489;
+        
+    }
+    .home-content h3{
+        font-size: 20px; 
+        font-weight: 700; 
+    }
+    .home-content h1{
+        font-size: 35px;
+        font-weight: 700;
+        margin: -3px 0;
+    }
+    .home-content p{
+        font-size: 13px; 
+    }
+    .home-sci a{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
+    .img{
+        display:none ;
+    }
+  
+}
+
+
+@media only screen and (max-width: 919px)
+{   
+    .menu.responsive .dropdown {float: none;}
+
+    #header
+    {
+        padding: 30px 30px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #header ul{
+        display:none ;
+    }
+    #header .logo{
+        font-weight: 700;
+        font-size: 30px; 
+    }
+    section #text{
+        height: 30%;
+        font-size: 15vw;
+    }
+    #header ul li{
+        margin: 1rem ;
+    }
+    .img{
+        display:none ;
+    }
+
+}

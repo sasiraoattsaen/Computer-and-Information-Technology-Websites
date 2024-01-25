@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="แบบคอมพิวเตอร์.css">
+
+    <title>แบบทดสอบคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=tis-620">
+
+    <style>
+      .qheader{
+      font:bold ;
+      }
+      .qselections{
+      font:normal ;
+      }
+      </style>
+
+    <script src="quizconfig1.js"></script>
+
+    <script>
+    var actualchoices=new Array()
+    document.cookie="ready=yes"
+    </script>
+
+</head>
+<body> 
+       <section class="background">
+        <h2 id="text"><span>Computer and information </span><br>technology</h2>  
+        <img src="img/forest14.png" id="forest" >
+        </section>
+    
+    <header id="header"> 
+      <a href="index.html" class="logo">Computer</a>
+    
+        <ul class="menu" id="mymenu">
+            <li class="dropdown">
+                <button class="dropbtn" ><a href="index.html">หน้าแรก</a></button>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn" >หน่วยการเรียน</button>
+                <div class="dropdown-content">
+                    <a href="คอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+                    <a href="ระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+                    <a href="ความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+                    <a href="การประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <button class="dropbtn">แบบทดสอบ</button>
+                <div class="dropdown-content">
+                  <a href="แบบคอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+                  <a href="แบบระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+                  <a href="แบบความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+                  <a href="แบบการประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <button class="dropbtn" >
+                  <a href="ผู้จัดทำ.html">ผู้จัดทำ</a></button>
+            </li>
+        </ul>
+        
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    </header>
+
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+
+          let mymenu = document.getElementById("mymenu");
+          if (mymenu.className === "menu") {
+            mymenu.className += " menu-active";
+        }else {
+            mymenu.className = "menu";
+         }
+        }
+
+    </script>
+
+    
+     
+
+
+
+
+
+
+
+<div class="examination">
+      
+    <div class="headerr">
+      <b>แบบทดสอบ คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</b>
+    </div>
+  
+    <div  class="qheader1">
+      <b>คำชี้แจง : จงเลือกคำตอบที่ถูกต้องที่สุด</b><br>
+      </div>
+
+      <form method="POST" name="myquiz">
+    
+
+      <div class="qheader">
+      <b>1) ข้อใดหมายถึงสารสนเทศ</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question1"> ก) สมชายอายุ 20 ปี<br>
+      <input type="radio" value="b" name="question1"> ข) ดารณีสูง 170 ซม.<br>
+      <input type="radio" value="c" name="question1"> ค) ประทีปได้เกรดเฉลี่ย 3.50<br>
+      <input type="radio" value="d" name="question1"> ง) จรัสทำข้อสอบได้ 39 คะแนน<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>2) งบกำไรขาดทุนเป็นส่วนใดของระบบสารสนเทศ</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question2"> ก) ข้อมูล<br>
+      <input type="radio" value="b" name="question2"> ข) ประมวลผลข้อมูล<br>
+      <input type="radio" value="c" name="question2"> ค) สารสนเทศ<br>
+      <input type="radio" value="d" name="question2"> ง) เผยแพร่ข้อมูล<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>3) ข้อใดไม่ใช่องค์ประกอบของเทคโนโลยีสารสนเทศ</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question3"> ก) นักวิเคราะห์ระบบ <br>
+      <input type="radio" value="b" name="question3"> ข) พนักงานขาย<br>
+      <input type="radio" value="c" name="question3"> ค) Tablet PC <br>
+      <input type="radio" value="d" name="question3"> ง) ข้อมูล<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>4) การนำโปรแกรมตารางงานมาใช้ในการคำนวณค่านายหน้า เกี่ยวข้องกับระบบสารสนเทศอย่างไร </b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question4"> ก) การเก็บข้อมูล<br>
+      <input type="radio" value="b" name="question4"> ข) การประมวลผลข้อมูล <br>
+      <input type="radio" value="c" name="question4"> ค) การนำเสนอข้อมูล<br>
+      <input type="radio" value="d" name="question4"> ง) การป้อนข้อมูล<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>5) ข้อใดไม่ใช่ลักษณะสำคัญของเทคโนโลยีสารสนเทศ</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question5"> ก) มีความถูกต้อง<br>
+      <input type="radio" value="b" name="question5"> ข) รวดเร็วและตรงเวลา<br>
+      <input type="radio" value="c" name="question5"> ค) มีความน่าสนใจ <br>
+      <input type="radio" value="d" name="question5"> ง) มีความน่าเชื่อถือ<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>6) Microsoft Office เป็นซอฟต์แวร์ประเภทใด</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question6"> ก) ระบบปฏิบัติการ<br>
+      <input type="radio" value="b" name="question6"> ข) ซอฟต์แวร์สำเร็จรูปเฉพาะด้าน<br>
+      <input type="radio" value="c" name="question6"> ค) ซอฟต์แวร์อรรถประโยชน์<br>
+      <input type="radio" value="d" name="question6"> ง) ซอฟต์แวร์ประยุกต์<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>7) ผลกระทบของเทคโนโลยีที่ดีคือข้อใด</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question7"> ก) ราคาสินค้าถูกลง<br>
+      <input type="radio" value="b" name="question7"> ข) ช่วยให้สุขภาพดีขึ้น<br>
+      <input type="radio" value="c" name="question7"> ค) มีแหล่งความรู้ให้ค้นคว้ามากขึ้น<br>
+      <input type="radio" value="d" name="question7"> ง) ช่วยให้อาชญากรรมลดลง<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>8) ผลกระทบของเทคโนโลยีสารสนเทศต่อมนุษย์ในด้านลบคือข้อใด</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question8"> ก) ความเสื่อมถอยของจริยธรรม<br>
+      <input type="radio" value="b" name="question8"> ข) การบริโภคเปลี่ยนไป<br>
+      <input type="radio" value="c" name="question8"> ค) การทำงานเปลี่ยนไป<br>
+      <input type="radio" value="d" name="question8"> ง) การติดต่อสื่อสาร<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>9) นายเฉลิมไปอ่าน E-mail ของแพรวา เป็นการผิดจริยธรรมด้านใด</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question9"> ก) ความเป็นส่วนตัว<br>
+      <input type="radio" value="b" name="question9"> ข) ความถูกต้อง<br>
+      <input type="radio" value="c" name="question9"> ค) ความเป็นเจ้าของ<br>
+      <input type="radio" value="d" name="question9"> ง) การเข้าถึงข้อมูล<br>
+      </div>
+      
+      <br>
+      
+      <div class="qheader">
+        <b>10) สิ่งที่ไม่ควรทำในการใช้คอมพิวเตอร์และระบบสารสนเทศ</b></div>
+      <div class="qselections">
+      <input type="radio" value="a" name="question10"> ก) ไม่ใช้คอมพิวเตอร์โจรกรรมข้อมูล<br>
+      <input type="radio" value="b" name="question10"> ข) ไม่ใช้คอมพิวเตอร์รบกวนคนอื่น<br>
+      <input type="radio" value="c" name="question10"> ค) แก้ไขข้อมูลของผู้อื่น<br>
+      <input type="radio" value="d" name="question10"> ง) ระวังการสร้างความเสียหายให้ผู้อื่น<br>
+      </div>
+      
+      </form>
+      
+
+      <div class="home-sci">
+        <a type="button" value="Grade Me!" name="B1" onClick="gradeit()" >ตกลง</a> 
+        <a type="button" value="Reset" name="B2" onClick="document.myquiz.reset()" >รีเซ็ต</a> 
+      </div>
+      
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="แบบระบบปฏิบัติการ.css">
+
+    <title>แบบทดสอบระบบปฏิบัติการ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=tis-620">
+
+    <style>
+      .qheader{
+      font:bold ;
+      }
+      .qselections{
+      font:normal ;
+      }
+      </style>
+
+    <script src="quizconfig2.js"></script>
+
+    <script>
+    var actualchoices=new Array()
+    document.cookie="ready=yes"
+    </script>
+    
+</head>
+<body> 
+        <section class="background">
+      <h2 id="text"><span>Operating </span><br>system</h2>  
+    
+      <img src="img/forest14.png" id="forest" >
+        
+     </section>
+    
+    <header id="header"> 
+      <a href="index.html" class="logo">Computer</a>
+    
+        <ul class="menu" id="mymenu">
+            <li class="dropdown">
+                <button class="dropbtn" ><a href="index.html">หน้าแรก</a></button>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn" >หน่วยการเรียน</button>
+                <div class="dropdown-content">
+                    <a href="คอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+                    <a href="ระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+                    <a href="ความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+                    <a href="การประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <button class="dropbtn">แบบทดสอบ</button>
+                <div class="dropdown-content">
+                  <a href="แบบคอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+                  <a href="แบบระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+                  <a href="แบบความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+                  <a href="แบบการประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <button class="dropbtn" >
+                  <a href="ผู้จัดทำ.html">ผู้จัดทำ</a></button>
+            </li>
+        </ul>
+        
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    </header>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+
+        let mymenu = document.getElementById("mymenu");
+        if (mymenu.className === "menu") {
+          mymenu.className += " menu-active";
+      }else {
+          mymenu.className = "menu";
+       }
+      }
+
+  </script>
+
+
+
+     <div class="examination">
+      
+      <div class="headerr">
+        <b>แบบทดสอบ ระบบปฏิบัติการ</b>
+      </div>
+    
+  
+        <form method="POST" name="myquiz">
+          <div  class="qheader1">
+            <b>คำชี้แจง : จงเลือกคำตอบที่ถูกต้องที่สุด</b><br>
+            </div>
+    
+  
+        <div class="qheader">
+        <b>1) เครื่องคอมพิวเตอร์ต้องมีซอฟต์แวร์ใดจึงจะทำงานได้</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question1"> ก) Microsoft Office<br>
+        <input type="radio" value="b" name="question1"> ข) Microsoft Windows<br>
+        <input type="radio" value="c" name="question1"> ค) Ubuntu<br>
+        <input type="radio" value="d" name="question1"> ง) ข้อ ข และ ค ถูก<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>2) Microsoft Windows รุ่นใดเป็นรุ่นล่าสุด</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question2"> ก) Windows Me<br>
+        <input type="radio" value="b" name="question2"> ข) Windows XP<br>
+        <input type="radio" value="c" name="question2"> ค) Windows 11<br>
+        <input type="radio" value="d" name="question2"> ง) Windows 8<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>3) ข้อใดไม่ใช่ระบบปฏิบัติการ</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question3"> ก) Windows 8<br>
+        <input type="radio" value="b" name="question3"> ข) Ubunti<br>
+        <input type="radio" value="c" name="question3"> ค) ios<br>
+        <input type="radio" value="d" name="question3"> ง) ไม่มีข้อถูก<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>4) แถบทางด้านล่างของหน้าต่างหมายถึงข้อใด</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question4"> ก) Menu bar<br>
+        <input type="radio" value="b" name="question4"> ข) Taskbar<br>
+        <input type="radio" value="c" name="question4"> ค) Title bar<br>
+        <input type="radio" value="d" name="question4"> ง) Scroll bar<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>5) การปักหมุดให้กับโปรแกรมทำเพื่อประโยชน์อะไร</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question5"> ก) ทำให้เห็นได้ง่ายขึ้น<br>
+        <input type="radio" value="b" name="question5"> ข) ทำงานได้เร็วขึ้น<br>
+        <input type="radio" value="c" name="question5"> ค) เรียกใช้โปรแกรมได้ง่านขึ้น<br>
+        <input type="radio" value="d" name="question5"> ง) หยุดโปรแกรมไม่ให้เคลื่อนที่<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>6) Jump List มีประโยชน์อย่างไร</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question6"> ก) เปิดไฟล์งานเดิมได้เริ่วขึ้น<br>
+        <input type="radio" value="b" name="question6"> ข) สลับหน้าต่างโปรแกรม<br>
+        <input type="radio" value="c" name="question6"> ค) ย้อนการทำงานของไฟล์เอกสาร<br>
+        <input type="radio" value="d" name="question6"> ง) มีหน้าต่าง Preview ให้ดูตัวอย่างงาน<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>7) คำสั่งข้อใดใช้สำหรับย้ายไฟล์</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question7"> ก) Ctrl + X กับ Ctrl + V<br>
+        <input type="radio" value="b" name="question7"> ข) Alt + C กับ Alt + V<br>
+        <input type="radio" value="c" name="question7"> ค) Alt + X กับ Alt + V<br>
+        <input type="radio" value="d" name="question7"> ง) Alt + C กับ Ctrl + V<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>8) ข้อใดเป็นวิธีการสร้างโฟลเดอร์ใหม่</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question8"> ก) คลิกเมาส์ขวาแล้วลากไปตำแหน่งที่ต้องการ<br>
+        <input type="radio" value="b" name="question8"> ข) คลิกเมาส์ซ้ายเลือกเมนู New Folder<br>
+        <input type="radio" value="c" name="question8"> ค) คลิกเมาส์ซ้ายเลือกเมนู New<br>
+        <input type="radio" value="d" name="question8"> ง) คลิกเมาส์ขวาเลือกเมนู New จะปรากฎเมนูย่อยอีกเลือก Folder
+        <br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>9) ข้อใดใช้สำหรับเปลี่ยนชื่อไฟล์หรือโฟลเดอร์ </b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question9"> ก) F1<br>
+        <input type="radio" value="b" name="question9"> ข) F2<br>
+        <input type="radio" value="c" name="question9"> ค) F3<br>
+        <input type="radio" value="d" name="question9"> ง) F4<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>10) ข้อใดเป็นการเลือกไฟล์ที่ไม่ติดกัน</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question10"> ก) Ctrl + A<br>
+        <input type="radio" value="b" name="question10"> ข) คลิกเลือกไฟล์ในหน้าต่าง แล้วกดปุ่ม Organize > Select all<br>
+        <input type="radio" value="c" name="question10"> ค) คลิกเลือกไฟล์แรก กดปุ่ม Shift คลิกที่ไฟล์สุดท้ายสุดท้าย<br>
+        <input type="radio" value="d" name="question10"> ง) กดปุ่ม Ctrl คลิกเลือกไฟล์ที่ต้องการ<br>
+        </div>
+        
+        </form>
+        
+  
+        <div class="home-sci">
+          <a type="button" value="Grade Me!" name="B1" onClick="gradeit()" >เฉลย</a> 
+          <a type="button" value="Reset" name="B2" onClick="document.myquiz.reset()" >รีเซ็ต</a> 
+        </div>
+        
+  </div>
+   
+
+</body>
+</html>

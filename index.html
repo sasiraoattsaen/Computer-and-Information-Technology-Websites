@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>หน้าแรก</title>
+    
+</head>
+<body> 
+    <section class="background">
+        <h2 id="text"><span>Welcome to my </span><br>website</h2>  
+    
+        <img src="img/forest14.png" id="forest" >
+        <a href="ผู้จัดทำ.html" id="btn">creator</a> 
+     </section>
+     
+    <header id="header"> 
+        <a href="index.html" class="logo">Computer</a>
+    
+<ul class="menu" id="mymenu">
+        <li class="dropdown">
+        <button class="dropbtn" ><a href="index.html">หน้าแรก</a></button>
+    </li>
+
+    <li class="dropdown">       
+        <button class="dropbtn" >หน่วยการเรียน</button>
+        <div class="dropdown-content">
+            <a href="คอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+            <a href="ระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+            <a href="ความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+            <a href="การประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>        
+        </div>
+    </li>
+
+    <li class="dropdown">
+        <button class="dropbtn">แบบทดสอบ</button>
+        <div class="dropdown-content">
+            <a href="แบบคอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+            <a href="แบบระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+            <a href="แบบความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+            <a href="แบบการประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>
+        </div>
+    </li>
+
+    <li class="dropdown">
+        <button class="dropbtn" >
+          <a href="ผู้จัดทำ.html">ผู้จัดทำ</a></button>
+    </li>
+</ul>
+        
+    <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+  </header>
+
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+
+          let mymenu = document.getElementById("mymenu");
+          if (mymenu.className === "menu") {
+            mymenu.className += " menu-active";
+        }else {
+            mymenu.className = "menu";
+         }
+        }
+
+    </script>
+
+
+
+     
+
+</body>
+</html>

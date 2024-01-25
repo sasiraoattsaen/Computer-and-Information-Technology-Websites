@@ -1,0 +1,180 @@
+<html>
+
+<head>
+<title>เฉลยแบบทดสอบ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=tis-620">
+<style >
+
+    .home{
+    background: linear-gradient(to bottom, #F9CCD3,transparent); 
+    position: relative;
+    background-size: cover;
+    padding: 100px ;
+    
+    }
+
+    .headerr b{
+    font-size: 40px;
+    font-family: 'Angsana New';
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    }
+    .qheader p{
+    font-size: 30px;
+    font-family: 'Angsana New';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .home-sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .home-sci a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    display: inline-flex;
+    padding: 5px 10px;
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 2.9px solid #DE847B;
+    border-radius: 40px;
+    color: #DE847B;
+    margin: 30px 15px 30px 0;
+
+    font-family: 'Angsana New';
+    font-size: 25px;
+    }
+    .home-sci a:hover{
+    background:#DE847B;
+    color: #F9F1F0;
+    box-shadow: 0 0 20px #DE847B;
+    }
+    .box{
+
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: none;
+
+    font-family: 'Angsana New';
+    font-size: 30px;
+    color: #DE847B;
+
+
+
+    }
+
+    @media only screen and (max-width: 450px){   
+    .home-sci a{
+       
+        width: 50px;
+        height: 20px;
+        font-size: 15px;
+    }
+    }
+
+    @media only screen and (max-width: 919px){   
+    .home-sci a{
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+    }
+    
+
+}
+</style>
+
+
+</head>
+<body>
+
+<script src="quizconfig3.js"></script>
+
+
+<div class="home"> 
+
+<div class="headerr">
+  <b>เฉลยแบบทดสอบ</b>
+</div>
+
+
+<div class="center"><center>
+<table>
+
+  <tr>
+    <td width="100%">
+      <form method="POST" name="result">
+        <table>
+
+        <tr>
+          <td class="qheader"> <p><b>คำถามที่คุณตอบถูก :</b></p></td>
+          <td height="25"><input class="box" type="text" name="p" size="24"></td>
+        </tr>
+
+        <tr>
+          <td class="qheader"> <p><b>คำถามที่คุณตอบผิด :</b></p></td>
+          <td height="25"><input class="box"type="text" name="p" size="24"></td>
+        </tr>
+
+        <tr>
+          <td class="qheader"><p><b>คิดเป็นเปอร์เซ็นต์  : </b></p></td>
+          <td height="25"><input class="box"type="text" name="q" size="8"></td>
+        </tr>
+
+      </table>
+    </form>
+    </td>
+  </tr>
+
+</table>
+</center></div>
+
+
+
+<form method="POST">
+  <div><center>
+    <p>
+
+<script>
+    var wrong=0
+    for (e=0;e<=2;e++)
+    document.result[e].value=""
+
+    var results=document.cookie.split(";")
+    for (n=0;n<=results.length-1;n++){
+    if (results[n].charAt(1)=='q')
+    parse=n}
+
+    var incorrect=results[parse].split("=")
+    incorrect=incorrect[1].split("/")
+    if (incorrect[incorrect.length-1]=='b')
+    incorrect=""
+    document.result[0].value=totalquestions-incorrect.length+" ข้อ จาก "+totalquestions
+    document.result[2].value=(totalquestions-incorrect.length)/totalquestions*100+"%"
+    for (temp=0;temp<incorrect.length;temp++)
+    document.result[1].value+=incorrect[temp]+", "
+</script>
+
+  </p>
+</center>
+</div>
+</form>
+
+<div class="home-sci">
+  <a type="button" value="ทำแบบทดสอบอีกครั้ง" name="B1"onClick="history.go(-1)">ทำแบบทดสอบอีกครั้ง</a> 
+  <a type="button" value="Solution" name="B2"onClick="showsolution()">เฉลยแบบละเอียด</a> 
+</div>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: #f7dde1;
+    min-height: 100vh;
+
+    
+}
+#header
+{
+    
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+}
+#header .logo
+{
+
+     color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+
+}
+#header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a
+{
+    text-decoration: none;
+    padding :6px 15px ;
+    color: #5cabca;
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #5cabca;
+    color: #fff;
+}
+
+section
+{
+    
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   pointer-events:none;
+}
+section #text
+{
+    
+    height: 31%;
+    position: absolute;
+    font-size: 9vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+
+    background:  -webkit-linear-gradient(
+        360deg,#f11c1c,#ff6790);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent ;
+
+}
+section #text span
+{
+    
+   
+    letter-spacing: px;
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+}
+.background
+{
+    background: url(img/forest8.png );
+}
+
+
+
+
+
+.dropbtn {
+    color: #5cabca;
+    text-decoration: none;
+    padding :6px 15px ;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+   
+  display: none;
+  position: absolute;
+  min-width: 251px;
+
+  z-index: 1;
+}
+
+.dropdown-content a { 
+  font-size: 14px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {    background: #5cabca; color: #fff;}
+
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  section::before{
+    content: '';
+    position: absolute;
+    left: 0;  
+    bottom: 0px;
+    width: 100%;    
+    height: 150px;
+    background: linear-gradient(to top, #f7dde1,transparent);
+    z-index: 10000;
+}
+
+
+
+
+.headerr b{
+    font-size: 40px;
+    font-family: 'Angsana New';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.examination{
+   
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 80px ;
+}
+.qheader{
+    font-size: 30px;
+    font-family: 'Angsana New';
+}
+.qheader1 b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Angsana New';
+}
+.qheader b{
+    font-size: 30px;
+    font-family: 'Angsana New';
+}
+.qselections{
+    font-size: 25px; 
+    font-family: 'Angsana New';
+    margin-top: 0.2rem; 
+
+}
+
+.home-sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-sci a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    display: inline-flex;
+    padding: 8px 30px;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2.9px solid #DE847B;
+    border-radius: 40px;
+    color: #DE847B;
+    margin: 30px 15px 30px 0;
+
+    font-family: 'Angsana New';
+    font-size: 25px;
+}
+.home-sci a:hover{
+    background:#DE847B;
+    color: #F9F1F0;
+    box-shadow: 0 0 20px #DE847B;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-active{
+    display: block !important;
+
+}
+@media only screen and (min-width: 920px){
+    .container{
+        display: none;
+    }
+    section #text{
+        transform: translateY(-50%);
+        
+    }
+}
+
+@media only screen and (max-width: 450px)
+{   
+    #header
+    {
+        padding: 30px 30px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header ul{
+        display:none ;
+    }
+    #header .logo{
+        font-weight: 700;
+        font-size: 25px; 
+    }
+    #header ul li{
+        margin: 2rem 0;  
+    }
+
+
+    section #text span
+    {
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    }
+    .home-sci a{
+       
+        width: 50px;
+        height: 20px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 919px)
+{   
+    .menu.responsive .dropdown {float: none;}
+
+    #header
+    {
+        padding: 30px 30px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #header ul{
+        display:none ;
+    }
+    #header .logo{
+        font-weight: 700;
+        font-size: 30px; 
+    }
+    section #text{
+        height: 30%;
+        font-size: 15vw;
+    }
+    #header ul li{
+        margin: 1rem ;
+    }
+    .qheader{
+        font-size: 15px;
+    }
+    .qheader b{
+        font-size: 15px;
+    }
+    .qheader1 b{
+        font-size: 15px;
+    }
+    .qselections{
+        font-size: 15px; 
+    }
+    .headerr b{
+        font-size: 15px;   
+    }
+    .home-sci a{
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+    }
+    
+
+}

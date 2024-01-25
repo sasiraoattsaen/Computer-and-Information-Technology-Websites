@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="แบบความรู้เบื้องต้น.css">
+
+    <title>แบบทดสอบความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=tis-620">
+
+    <style>
+      .qheader{
+      font:bold ;
+      }
+      .qselections{
+      font:normal ;
+      }
+      </style>
+
+    <script src="quizconfig3.js"></script>
+
+    <script>
+    var actualchoices=new Array()
+    document.cookie="ready=yes"
+    </script>
+</head>
+<body> 
+    <section class="background">
+      <h2 id="text"><span>Basic knowledge about </span><br>the internet</h2>  
+      <img src="img/forest14.png" id="forest" >
+</section>
+    
+    <header id="header"> 
+      <a href="index.html" class="logo">Computer</a>
+    
+        <ul class="menu" id="mymenu">
+            <li class="dropdown">
+                <button class="dropbtn" ><a href="index.html">หน้าแรก</a></button>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn" >หน่วยการเรียน</button>
+                <div class="dropdown-content">
+                    <a href="คอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+                    <a href="ระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+                    <a href="ความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+                    <a href="การประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <button class="dropbtn">แบบทดสอบ</button>
+                <div class="dropdown-content">
+                  <a href="แบบคอมพิวเตอร์.html">คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</a>
+                  <a href="แบบระบบปฏิบัติการ.html">ระบบปฏิบัติการ</a>
+                  <a href="แบบความรู้เบื้องต้น.html">ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</a>
+                  <a href="แบบการประยุกต์ใช้.html">การประยุกต์ใช้เทคโนโลยีสมัยใหม่</a>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <button class="dropbtn" >
+                  <a href="ผู้จัดทำ.html">ผู้จัดทำ</a></button>
+            </li>
+        </ul>
+        
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    </header>
+
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+
+          let mymenu = document.getElementById("mymenu");
+          if (mymenu.className === "menu") {
+            mymenu.className += " menu-active";
+        }else {
+            mymenu.className = "menu";
+         }
+        }
+
+    </script>
+
+
+
+
+
+<div class="examination">
+      
+      <div class="headerr">
+        <b>แบบทดสอบ ความรู้เบื้องต้นเกี่ยวกับอินเทอร์เน็ต</b>
+      </div>
+      <form method="POST" name="myquiz">
+
+        <div  class="qheader1">
+          <b>คำชี้แจง : จงเลือกคำตอบที่ถูกต้องที่สุด</b><br>
+          </div>
+      
+        <div class="qheader">
+        <b>1) อินเทอร์เน็ต มีการพัฒนามาจากข้อใด</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question1"> ก) ไซเบอร์สเปซ<br>
+        <input type="radio" value="b" name="question1"> ข) ไอเอ็นเน็ต<br>
+        <input type="radio" value="c" name="question1"> ค) อาร์พาเน็ต<br>
+        <input type="radio" value="d" name="question1"> ง) เอพาร์เน็ต<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+        <b>2) mnuschai@yahoo.com ข้อความที่ขีดเส้นใต้นั้นคืออะไร</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question2"> ก) ชื่อของผู้ใช้<br>
+        <input type="radio" value="b" name="question2"> ข) ชื่อที่อยู่บนอินเทอร์เน็ต<br>
+        <input type="radio" value="c" name="question2"> ค) บริการอีเมล์ที่ต้องเสียค่าใช้จ่าย<br>
+        <input type="radio" value="d" name="question2"> ง) IP Address<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>3) IP Address เป็นรหัสประจำตัวของคอมพิวเตอร์ที่เชื่อมต่อเข้ากับอินเทอร์เน็ต ประกอบไปด้วยตัวเลขกี่จำนวน</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question3"> ก) 4 จำนวน<br>
+        <input type="radio" value="b" name="question3"> ข) 5 จำนวน<br>
+        <input type="radio" value="c" name="question3"> ค) 6 จำนวน<br>
+        <input type="radio" value="d" name="question3"> ง) 7 จำนวน<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>4) นามสกุล .mit เป็นองค์กรใด</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question4"> ก) กลุ่มองค์การค้า<br>
+        <input type="radio" value="b" name="question4"> ข) กลุ่มมูลนิธิ <br>
+        <input type="radio" value="c" name="question4"> ค) กลุ่มผู้ให้บริการด้านข้อมูลข่าวสาร<br>
+        <input type="radio" value="d" name="question4"> ง) กลุ่มองค์การทหาร<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>5) กลุ่มองค์กรรัฐบาล มีนามสกุลว่าอะไร</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question5"> ก) .arts<br>
+        <input type="radio" value="b" name="question5"> ข) .org<br>
+        <input type="radio" value="c" name="question5"> ค) .net <br>
+        <input type="radio" value="d" name="question5"> ง) .gov<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>6) ความหมายตัวย่อของโดเมนประเทศญี่ปุ่ญมีโค้ดตัวย่ออะไร</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question6"> ก) .jp<br>
+        <input type="radio" value="b" name="question6"> ข) .th<br>
+        <input type="radio" value="c" name="question6"> ค) .sg<br>
+        <input type="radio" value="d" name="question6"> ง) .fr<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>7) เว็บไซต์ที่ให้บริการค้นหาข้อมูลในประเทศไทยที่นิยมกันมาก คือเว็บไซต์ใด</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question7"> ก) www.google.co.h<br>
+        <input type="radio" value="b" name="question7"> ข) www.sanook.com<br>
+        <input type="radio" value="c" name="question7"> ค) www.hi5.com<br>
+        <input type="radio" value="d" name="question7"> ง) ถูกทั้งข้อ ก และ ข <br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>8) การพัฒนาระบบ World Wide Web เริ่มต้น ค.ศ. ใด</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question8"> ก) ค.ศ. 1898<br>
+        <input type="radio" value="b" name="question8"> ข) ค.ศ. 1989<br>
+        <input type="radio" value="c" name="question8"> ค) ค.ศ. 1988<br>
+        <input type="radio" value="d" name="question8"> ง) ค.ศ. 1987<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>9) FTP มีความหมายตรงกับข้อใด</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question9"> ก) การสนทนาผ่านระบบออนไลน์<br>
+        <input type="radio" value="b" name="question9"> ข) การบริการด้านเว็บไซต์<br>
+        <input type="radio" value="c" name="question9"> ค) การโอนถ่ายข้อมูลระหว่างเครื่อง<br>
+        <input type="radio" value="d" name="question9"> ง) การค้นหาข้อมูล<br>
+        </div>
+        
+        <br>
+        
+        <div class="qheader">
+          <b>10) บริการกระดานข่าวอิเล็กทรอนิกส์จะเรียกอีกชื่อหนึ่งว่าอะไร</b></div>
+        <div class="qselections">
+        <input type="radio" value="a" name="question10"> ก) Newgroup<br>
+        <input type="radio" value="b" name="question10"> ข) Infarmation<br>
+        <input type="radio" value="c" name="question10"> ค) Commu<br>
+        <input type="radio" value="d" name="question10"> ง) Counteraction<br>
+        </div>
+        
+        </form>
+        
+  
+        <div class="home-sci">
+          <a type="button" value="Grade Me!" name="B1" onClick="gradeit()" >เฉลย</a> 
+          <a type="button" value="Reset" name="B2" onClick="document.myquiz.reset()" >รีเซ็ต</a> 
+        </div>
+        
+  </div>
+</body>
+</html>
